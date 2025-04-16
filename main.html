@@ -1,16 +1,54 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <meta charset="UTF-8">
+  <title>Box Model Circles</title>
+  <style>
+    body {
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
+    .container {
+      background-color: #d3d3d3; /* Light grey */
+      padding: 20px;
+      border: 2px solid black;
+      border-radius: 25px;
+      text-align: center;
+      width: fit-content;
+    }
+
+    .red, .green, .yellow {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      margin: 0 10px;
+      border-radius: 50%;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    .yellow {
+      background-color: yellow;
+    }
+
+    .red {
+      background-color: red;
+    }
+  </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <div class="container">
+    <div class="green"></div>
+    <div class="yellow"></div>
+    <div class="red"></div>
+  </div>
 
 </body>
-
 </html>
